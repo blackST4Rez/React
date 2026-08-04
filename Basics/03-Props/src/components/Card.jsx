@@ -1,14 +1,16 @@
-
-
-const Card = (userData) => {
+const Card = ({
+    name,
+    age,
+    skill,
+    profile
+}) => {
     
-    console.log(userData);
     return (
         <div className="card">
-            <img src={userData.profile} alt="chinese-new-year" />
-            <h1>{userData.user}</h1>
-            <p>Age - {userData.age}</p>
-            <p>{userData.skill}</p> 
+            <img src={profile} alt="user-profile" />
+            <h1>{name}</h1>
+            <p>Age - {age}</p>
+            <p>{skill}</p> 
             <button>View Profile</button>
         </div>
     )

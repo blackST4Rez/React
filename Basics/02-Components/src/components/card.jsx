@@ -1,5 +1,5 @@
 
-const card = () => {
+const Card = () => {
     return (
         <div className="card">
             <h1>Hey, it's Raka Maharjan</h1>
@@ -9,4 +9,4 @@ const card = () => {
     )
 }
 
-export default card
+export default Card
