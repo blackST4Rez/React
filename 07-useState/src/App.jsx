@@ -3,25 +3,23 @@ import { useState } from "react"
 
 const App = () => {
 
-  const [num, setNum] = useState(10)
+  const [users, setUsers] = useState({
+    name: '',
+    age: 0,
+    email: ''
+  })
 
-  function increaseNum() {
-    setNum(num+1)
-  }
-  function decreaseNum() {
-    setNum(num-1)
-  }
-  function jump5Num() {
-    setNum(num+5)
+  const handleChange = () => {
+    setUsers({...users, name: 'Raka', age: 23, email: 'raka123@gmail.com'})
   }
 
   return (
     <div>
-      <h1>{num}</h1>
-      <button onClick={increaseNum}>increase</button>
-      <button onClick={decreaseNum}>decrease</button>
-      <button onClick={jump5Num}>Increas by 5</button>
-    </div>
+        <input value={users.name}  />
+        <input value={users.email} />
+        <input value={users.age} />
+        <button onClick={handleChange} >Toggle</button>
+      </div>
   )
 }
 
