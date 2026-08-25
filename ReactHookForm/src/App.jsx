@@ -1,8 +1,10 @@
-
+import SimpleForm from "./components/SimpleForm"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <SimpleForm />
+    </div>
   )
 }
 

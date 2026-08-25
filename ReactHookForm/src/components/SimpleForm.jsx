@@ -1,7 +1,7 @@
 
 import { useForm } from 'react-hook-form';
 
-function SimpleForm() {
+const SimpleForm = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
